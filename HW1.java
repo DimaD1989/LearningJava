@@ -16,11 +16,20 @@ import java.util.Random;
 public class HW1 {
     public static void main(String[] args)
     {
+        //1.
         int[] array  = new int[1000];
         for (int i = 0; i < array.length; i++) {
             array[i] = rnd(-1000,1000);
         }
         System.out.println(Arrays.toString(array));
+
+        int a = (int) (Math.random()*(2000+1)) - 1000;
+		
+		System.out.println(a);
+
+        //2
+        
+
     }
     
     public static int rnd(int min, int max)
