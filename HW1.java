@@ -13,9 +13,14 @@ import java.util.Random;
 // import java.util.Random;
 // import java.util.Arrays;
 
-public class HW1 {
+public class HW1 
+{
+    /**
+     * @param args
+     */
     public static void main(String[] args)
     {
+
         //1.
         int[] array  = new int[1000];
         for (int i = 0; i < array.length; i++) {
@@ -26,10 +31,6 @@ public class HW1 {
         int a = (int) (Math.random()*(2000+1)) - 1000;
 		
 		System.out.println(a);
-
-        //2
-        
-
     }
     
     public static int rnd(int min, int max)
@@ -37,5 +38,36 @@ public class HW1 {
         Random random = new Random();
         return random.nextInt(max - min +1) + min;  
     }
-    
+/*
+    Метод вычисления старшего значащего бита
+    полученного случайного числа.
+*/
+    public static int bit1( int i) {
+            
+        int msbNumber = Integer.toBinaryString(i).length();
+        return msbNumber;
+    }
+/*
+    2. Метод вычисления позиции (номера) старшего значащего бита (msb).
+*/
+    /**
+     * @param i
+     * @return
+     */
+    static int setBitNumber(int i) 
+    {
+
+        if (i == 0)
+            return 0;
+ 
+        int msb = 0;
+        i = i / 2;
+ 
+        while (i != 0) {
+            i = i / 2;
+            msb++;
+        }
+ 
+        return (1 << msb);
+    }
 }
