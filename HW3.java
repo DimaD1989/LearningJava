@@ -21,6 +21,19 @@ public class HW3 {
         Surname.add("Сидоров");
         System.out.println(Surname);
 
+        // Итерация всех элементов списка цветов и добавления к каждому символа '!'.
+        for(String i : Surname) {
+            System.out.println(i + "!");}
+       
+        Surname.add("Иванов");
+        Surname.add("Петров");
+        Surname.add("Сидоров");
+        for(Object element : Surname) {
+            System.out.println(element + "!");
+       
+        }
     }
-    
 }
+
+    
+
