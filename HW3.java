@@ -30,7 +30,7 @@ public class HW3 {
         // Surname.add("Сидоров");
         // for(Object element : Surname) {
         //     System.out.println(element + "!");
-        
+
         // Вставить элемент в список в первой позиции.   
         // ArrayList<String> Surname= new ArrayList<String>();
         // Surname.add("Иванов");
@@ -53,15 +53,22 @@ public class HW3 {
         // System.out.println("Третий элемент: "+element);
 
         // Обновить определенный элемент списка по заданному индексу.
+        // ArrayList<String> Surname= new ArrayList<String>();
+        // Surname.add("Иванов");
+        // Surname.add("Петров");
+        // Surname.add("Сидоров"); 
+        // System.out.println(Surname);
+        // Surname.set(2, "Пупкин");
+        // System.out.println(Surname);
+
+        // Удалить третий элемент из списка.
         ArrayList<String> Surname= new ArrayList<String>();
         Surname.add("Иванов");
         Surname.add("Петров");
         Surname.add("Сидоров"); 
         System.out.println(Surname);
-        Surname.set(2, "Пупкин");
+        Surname.remove(2); 
         System.out.println(Surname);
-
-
         }
     }
 
