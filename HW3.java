@@ -31,14 +31,25 @@ public class HW3 {
         // for(Object element : Surname) {
         //     System.out.println(element + "!");
         // Вставить элемент в список в первой позиции.   
+        // ArrayList<String> Surname= new ArrayList<String>();
+        // Surname.add("Иванов");
+        // Surname.add("Петров");
+        // Surname.add("Сидоров"); 
+        // System.out.println(Surname);
+        // Surname.add(1, "Пупкин");
+        // Surname.add(2, "Сергеев");
+        // System.out.println(Surname);
+
+        // Извлечь элемент (по указанному индексу) из заданного списка.
         ArrayList<String> Surname= new ArrayList<String>();
         Surname.add("Иванов");
         Surname.add("Петров");
         Surname.add("Сидоров"); 
         System.out.println(Surname);
-        Surname.add(1, "Пупкин");
-        Surname.add(2, "Сергеев");
-        System.out.println(Surname);
+        String element = Surname.get(0);
+        System.out.println("Первый элемент: "+element);
+        element = Surname.get(2);
+        System.out.println("Третий элемент: "+element);
         }
     }
 
