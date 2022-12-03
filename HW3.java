@@ -1,6 +1,7 @@
-import java.lang.reflect.Array;
+// import java.lang.reflect.Array;
 import java.util.ArrayList;
-import java.util.stream.Collectors;
+// import java.util.Collections;
+// import java.util.stream.Collectors;
 
 
 // Создать новый список, добавить несколько строк и вывести коллекцию на экран.
@@ -91,18 +92,40 @@ public class HW3 {
         // .collect(Collectors.toList());
         // System.out.println(result);
 
+        // System.out.println(Surname);
+        // for (String lang : Surname) {
+        // if (lang.startsWith("Петров")) {
+        // System.out.println(lang);
+        // }
+
+        // Создать новый список и добавить в него несколько элементов первого списка.
+        // Удалить из первого списка все элементы отсутствующие во втором списке.
         ArrayList<String> Surname = new ArrayList<String>();
         Surname.add("Иванов");
         Surname.add("Петров");
-        Surname.add("Сидоров"); 
+        Surname.add("Сидоров");
         System.out.println(Surname);
-        for (String lang : Surname) {
-        if (lang.startsWith("Петров")) {
-        System.out.println(lang);
-        }
+        ArrayList<String> Surname1 = new ArrayList<String>();
+        Surname1.add("Иванов");
+        Surname1.add("Петров");
+        Surname1.add("Сидоров");
+        Surname1.add("Пупскин");
+        Surname1.add("Сергеев");
+        System.out.println(Surname1);
+        String index = "Пупкин";
+        Surname1.remove(3);
+        System.out.println(Surname1);
+    
+        
+        // List list = new ArrayList();
+        // String element = "first element";
+        // list.add(element);
+        // list.remove(element);
+        
+
     }
 }
-}
+
 
     
 
