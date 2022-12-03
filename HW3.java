@@ -1,4 +1,6 @@
+import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.stream.Collectors;
 
 
 // Создать новый список, добавить несколько строк и вывести коллекцию на экран.
@@ -13,6 +15,9 @@ import java.util.ArrayList;
 // *Сортировка списка.
 // *Сравнить время работы тысячи повторений пункта 3 для ArrayList и LinkedList.
 public class HW3 {
+    /**
+     * @param args
+     */
     public static void main(String[] args) {
         // Создать новый список, добавить несколько строк и вывести коллекцию на экран.
         // ArrayList<String> Surname= new ArrayList<String>();
@@ -62,16 +67,42 @@ public class HW3 {
         // System.out.println(Surname);
 
         // Удалить третий элемент из списка.
-        ArrayList<String> Surname= new ArrayList<String>();
+        // ArrayList<String> Surname= new ArrayList<String>();
+        // Surname.add("Иванов");
+        // Surname.add("Петров");
+        // Surname.add("Сидоров"); 
+        // System.out.println(Surname);
+        // Surname.remove(2); 
+        // System.out.println(Surname);
+
+        // Поиска элемента в списке по строке.
+   
+        // ArrayList<String> Surname= new ArrayList<String>();
+        // Surname.add("Иванов");
+        // Surname.add("Петров");
+        // Surname.add("Сидоров"); 
+        // System.out.println(Surname);
+        // if (Surname.contains("Петров"))
+        // System.out.println(Surname.contains("Петров"));
+        // System.out.println(Surname.contains("Пупкин"));
+
+        // ArrayList<String> result = (ArrayList<String>) Surname.stream()
+        // .filter(lang -> lang.contains("Иванов"))
+        // .collect(Collectors.toList());
+        // System.out.println(result);
+
+        ArrayList<String> Surname = new ArrayList<String>();
         Surname.add("Иванов");
         Surname.add("Петров");
         Surname.add("Сидоров"); 
         System.out.println(Surname);
-        Surname.remove(2); 
-        System.out.println(Surname);
+        for (String lang : Surname) {
+        if (lang.startsWith("Петров")) {
+        System.out.println(lang);
         }
     }
-
+}
+}
 
     
 
