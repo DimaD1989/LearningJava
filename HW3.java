@@ -15,25 +15,33 @@ import java.util.ArrayList;
 public class HW3 {
     public static void main(String[] args) {
         // Создать новый список, добавить несколько строк и вывести коллекцию на экран.
+        // ArrayList<String> Surname= new ArrayList<String>();
+        // Surname.add("Иванов");
+        // Surname.add("Петров");
+        // Surname.add("Сидоров");
+        // System.out.println(Surname);
+
+        // Итерация всех элементов списка цветов и добавления к каждому символа '!'.
+        // for(String i : Surname) {
+        //     System.out.println(i + "!");}
+       
+        // Surname.add("Иванов");
+        // Surname.add("Петров");
+        // Surname.add("Сидоров");
+        // for(Object element : Surname) {
+        //     System.out.println(element + "!");
+        // Вставить элемент в список в первой позиции.   
         ArrayList<String> Surname= new ArrayList<String>();
         Surname.add("Иванов");
         Surname.add("Петров");
-        Surname.add("Сидоров");
+        Surname.add("Сидоров"); 
         System.out.println(Surname);
-
-        // Итерация всех элементов списка цветов и добавления к каждому символа '!'.
-        for(String i : Surname) {
-            System.out.println(i + "!");}
-       
-        Surname.add("Иванов");
-        Surname.add("Петров");
-        Surname.add("Сидоров");
-        for(Object element : Surname) {
-            System.out.println(element + "!");
-       
+        Surname.add(1, "Пупкин");
+        Surname.add(2, "Сергеев");
+        System.out.println(Surname);
         }
     }
-}
+
 
     
 
