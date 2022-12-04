@@ -103,18 +103,19 @@ public class HW3 {
         ArrayList<String> Surname = new ArrayList<String>();
         Surname.add("Иванов");
         Surname.add("Петров");
-        Surname.add("Сидоров");
+        Surname.add("Сидоров");        
+        Surname.add("Пупкин");
+        Surname.add("Сергеев");
         System.out.println(Surname);
         ArrayList<String> Surname1 = new ArrayList<String>();
         Surname1.add("Иванов");
         Surname1.add("Петров");
         Surname1.add("Сидоров");
-        Surname1.add("Пупскин");
-        Surname1.add("Сергеев");
         System.out.println(Surname1);
-        String index = "Пупкин";
-        Surname1.remove(3);
-        System.out.println(Surname1);
+        for(Object o : Surname1){
+            Surname.remove(o);
+        }
+        System.out.println(Surname);
     
         
         // List list = new ArrayList();
