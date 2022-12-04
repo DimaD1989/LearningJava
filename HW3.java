@@ -2,6 +2,8 @@
 import java.util.ArrayList;
 // import java.util.Collections;
 // import java.util.stream.Collectors;
+import java.util.Collection;
+import java.util.*;
 
 
 // Создать новый список, добавить несколько строк и вывести коллекцию на экран.
@@ -128,6 +130,40 @@ public class HW3 {
         //     Surname.remove(o);
         // }
         // System.out.println(Surname);
+
+        // *Сортировка списка.
+        // ArrayList<String> Surname = new ArrayList<String>();
+        // Surname.add("Иванов");
+        // Surname.add("Петров");
+        // Surname.add("Сидоров");        
+        // Surname.add("Пупкин");
+        // Surname.add("Сергеев");
+        // System.out.println(Surname);
+        // for(String counter: Surname){
+        //     System.out.println(counter);
+        // }
+        // Collections.sort(Surname);
+        // System.out.println("Сортированный список:");
+        // for(String counter: Surname){
+        //     System.out.println(counter);
+        // }
+
+        // ArrayList<String> Surname = new ArrayList<String>();
+        // Surname.add("Иванов");
+        // Surname.add("Петров");
+        // Surname.add("Сидоров");        
+        // Surname.add("Пупкин");
+        // Surname.add("Сергеев");
+        // System.out.println(Surname);
+        // for(String str: Surname){
+        //     System.out.println(str);
+        // }
+        // Collections.sort(Surname,Collections.reverseOrder());
+        // System.out.println("Сортированный список:");
+        // for(String str: Surname){
+        //     System.out.println(str);
+        // }
+        // *Сравнить время работы тысячи повторений пункта 3 для ArrayList и LinkedList.
     }
 }
 
