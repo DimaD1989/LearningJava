@@ -99,31 +99,35 @@ public class HW3 {
         // }
 
         // Создать новый список и добавить в него несколько элементов первого списка.
+        //  ArrayList<String> Surname = new ArrayList<String>();
+        // Surname.add("Иванов");
+        // Surname.add("Петров");
+        // Surname.add("Сидоров");        
+        // System.out.println(Surname);
+        // ArrayList<String> Surname1 = new ArrayList<String>();
+        // Surname1.add("Пупкин");
+        // Surname1.add("Сергеев");
+        // System.out.println(Surname1);
+        // Surname1.addAll(Surname);
+        // System.out.println(Surname1);
+        
         // Удалить из первого списка все элементы отсутствующие во втором списке.
-        ArrayList<String> Surname = new ArrayList<String>();
-        Surname.add("Иванов");
-        Surname.add("Петров");
-        Surname.add("Сидоров");        
-        Surname.add("Пупкин");
-        Surname.add("Сергеев");
-        System.out.println(Surname);
-        ArrayList<String> Surname1 = new ArrayList<String>();
-        Surname1.add("Иванов");
-        Surname1.add("Петров");
-        Surname1.add("Сидоров");
-        System.out.println(Surname1);
-        for(Object o : Surname1){
-            Surname.remove(o);
-        }
-        System.out.println(Surname);
-    
-        
-        // List list = new ArrayList();
-        // String element = "first element";
-        // list.add(element);
-        // list.remove(element);
-        
-
+        // ArrayList<String> Surname = new ArrayList<String>();
+        // Surname.add("Иванов");
+        // Surname.add("Петров");
+        // Surname.add("Сидоров");        
+        // Surname.add("Пупкин");
+        // Surname.add("Сергеев");
+        // System.out.println(Surname);
+        // ArrayList<String> Surname1 = new ArrayList<String>();
+        // Surname1.add("Иванов");
+        // Surname1.add("Петров");
+        // Surname1.add("Сидоров");
+        // System.out.println(Surname1);
+        // for(Object o : Surname1){
+        //     Surname.remove(o);
+        // }
+        // System.out.println(Surname);
     }
 }
 
