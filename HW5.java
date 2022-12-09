@@ -46,6 +46,57 @@ public class HW5 {
     Jl.compute(i,(k, v) -> v = v + "!");
    }
    System.out.println(Jl);
+   // *Увеличить количество элементов таблиц до 1000 случайными ключами и общей строкой.
+   for (int i = 0; i < 1000; i++) {
+    int rand = new Random().nextInt(10000); // new Random() создаёт генератор чисел, использующий уникальное начальное число и  Метод nextInt считывает и возвращает введенное число
+    Jornal.put(rand, " ");
+   }
+   System.out.println(Jornal);
+    for (int i = 0; i < 1000; i++) {
+    int rand = new Random().nextInt(10000);
+    Jl.put(rand, " ");
+    }
+    System.out.println(Jl); 
+    
+    // **Сравнить время прямого и случайного перебора тысячи элементов словарей.
+    System.out.println("---Timing---");
+    long start = System.currentTimeMillis();
+    Jornal.forEach((k,v) -> System.out.print(k + v));
+    System.out.println();
+    System.out.println("HashMap: " + (System.currentTimeMillis() - start));
+
+    start = System.currentTimeMillis();
+    for (int i = 0; i < 1001; i++) {
+        System.out.printf(Jornal.get(i) + ", ");
+    }
+    System.out.println();
+    System.out.println("HashMap iterator: " + (System.currentTimeMillis() - start));
+
+    start = System.currentTimeMillis();
+    for (int i = new Random().nextInt(1000); i < 1001; i++) {
+        System.out.print(Jornal.get(i) +", ");
+    }
+    System.out.println();
+    System.out.println("HashMap Random: " + (System.currentTimeMillis() - start));
+
+    start = System.currentTimeMillis();
+    Jl.forEach((k,v) -> System.out.print(k + v));
+    System.out.println();
+    System.out.println("TreeMap: " + (System.currentTimeMillis() - start));
+
+    start = System.currentTimeMillis();
+    for (int i: Jl.keySet()) {
+        System.out.printf(i + ", ");
+    }
+    System.out.println();
+    System.out.println("TreeMap iterator: " + (System.currentTimeMillis() - start));
+
+    start = System.currentTimeMillis();
+    for (int i = new Random().nextInt(1000); i < 1001; i++) {
+        System.out.print(Jl.get(i) +", ");
+    }
+    System.out.println();
+    System.out.println("TreeMap Random: " + (System.currentTimeMillis() - start));
 
     }
 
