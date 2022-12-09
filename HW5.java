@@ -5,12 +5,9 @@
 // *Увеличить количество элементов таблиц до 1000 случайными ключами и общей строкой.
 // **Сравнить время прямого и случайного перебора тысячи элементов словарей.
 
-import java.security.Key;
 import java.util.*;
 
 public class HW5 {
-    private static final Integer Key = null;
-
     public static void main(String[] args) {
             //1. Создать словарь HashMap. Обобщение <Integer, String>.
             // Заполнить тремя ключами (индекс, цвет), добавить ключь, если не было!)
