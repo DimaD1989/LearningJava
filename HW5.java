@@ -32,6 +32,21 @@ public class HW5 {
     // Если лямбда-выражение выдает исключение, запись также удаляется.
    }
    System.out.println(Jornal);
+
+   // *Создать TreeMap, заполнить аналогично.
+   TreeMap<Integer,String> Jl = new TreeMap<>();
+   Jl.put( 1, "Иванов Иван Иваныч") ;
+   Jl.put(2, "Петров Петр Петрович");
+   Jl.put( 3, "Ильин Илья Иваныч");
+   Jl.put( 4, "Иванова Дарья Ивановна");
+   Jl.put( 5, "Сергеев Сергей Иваныч");
+   Jl.put( 1, "Копытько Наталья Петровна");
+   System.out.println(Jl);
+   for(int i:Jl.keySet()){
+    Jl.compute(i,(k, v) -> v = v + "!");
+   }
+   System.out.println(Jl);
+
     }
 
    
